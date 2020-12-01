@@ -5,7 +5,7 @@ A class is a blueprint for the object.
 Classes are like a blueprint or a prototype that need to  define to use or to create objects.
 
 ````
-class Parrot:
+class Person:
     pass
 
 ````
@@ -18,7 +18,7 @@ An object (instance) is an instantiation of a class. When class is defined, only
 An object is an instance of a class. We can take the `Parrot` class defined above, and use it to create an object or instance of it.
 
 ````
-obj = Parrot()
+obj = Person()
 
 ````
 
@@ -39,8 +39,22 @@ obj = Person("Dedar",20)
 Here country is a class variable.
 
 ### Instance Variable 
+---
+Instance variables are owned by instances of the class. This means that for each object or instance of a class, the instance variables are different.
 
+Unlike class variables, instance variables are defined within methods.
 
+````
+class Person:
+    country = "Bangladesh"
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+obj = Person("Dedar",20)
+
+````
+Here, sentence name is instance variable
 
 
 
