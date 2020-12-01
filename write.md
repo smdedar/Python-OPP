@@ -22,9 +22,11 @@ obj = Person()
 
 ````
 
-### Class Variable
+### Class Attribute
 ---
 Class variables are defined within the class construction. Because they are owned by the class itself, class variables are shared by all instances of the class. 
+
+Class attributes belong to the class itself they will be shared by all the instances. Such attributes are defined in the class body parts usually at the top
 
 ````
 class Person:
@@ -38,11 +40,13 @@ obj = Person("Dedar",20)
 ````
 Here country is a class variable.
 
-### Instance Variable 
+### Instance Attribute
 ---
 Instance variables are owned by instances of the class. This means that for each object or instance of a class, the instance variables are different.
 
 Unlike class variables, instance variables are defined within methods.
+
+Unlike class attributes, instance attributes are not shared by objects. Every object has its own copy of the instance attribute (In case of class attributes all object refer to single copy).
 
 ````
 class Person:
@@ -80,11 +84,6 @@ obj = Person("Dedar",20)
 
 
 
-
-
-
-
-
 ### Method
 ---
 Method is a special kind of function that is defined inside the class
@@ -108,4 +107,48 @@ obj.gender("Male")
 In the above program, we define one  method i.e gender()
 
 
-### 
+### Constructor Method
+---
+The constructor method is used to initialize data. It is run as soon as an object of a class is instantiated. Also known as the `__init__` method.
+
+````
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+````
+
+
+### Inheritance
+---
+Inheritance is a way of creating a new class for using details of an existing class without modifying it. The newly formed class is a derived class (or child class). Similarly, the existing class is a base class (or parent class).
+
+By using inheritance, we can create a class which uses all the properties and behavior of another class. The new class is known as a derived class or child class, and the one whose properties are acquired is known as a base class or parent class.
+
+It provides the re-usability of the code.
+
+````
+
+
+
+````
+
+
+### Polymorphism
+---
+ The word polymorphism means having many forms. In programming, polymorphism means same function name (but different signatures) being uses for different types.
+
+
+````
+# A simple Python function to demonstrate 
+# Polymorphism 
+
+def add(x, y, z = 0): 
+	return x + y+z 
+
+# Driver code 
+print(add(2, 3)) 
+print(add(2, 3, 4)) 
+
+````
+
