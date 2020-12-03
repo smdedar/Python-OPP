@@ -15,7 +15,7 @@ class Person:
 ---
 An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined. Therefore, no memory or storage is allocated.
 
-An object is an instance of a class. We can take the `Parrot` class defined above, and use it to create an object or instance of it.
+An object is an instance of a class. We can take the `Person` class defined above, and use it to create an object or instance of it.
 
 ````
 obj = Person()
