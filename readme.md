@@ -4,11 +4,11 @@ A class is a blueprint for the object.
 
 Classes are like a blueprint or a prototype that need to  define to use or to create objects.
 
-````
+```python
 class Person:
     pass
 
-````
+```
 
 
 ### Object
@@ -17,10 +17,10 @@ An object (instance) is an instantiation of a class. When class is defined, only
 
 An object is an instance of a class. We can take the `Person` class defined above, and use it to create an object or instance of it.
 
-````
+```python
 obj = Person()
 
-````
+```
 
 ### Class Attribute
 ---
@@ -28,7 +28,7 @@ Class variables are defined within the class construction. Because they are owne
 
 Class attributes belong to the class itself they will be shared by all the instances. Such attributes are defined in the class body parts usually at the top
 
-````
+````python
 class Person:
     country = "Bangladesh"
     def __init__(self,name,age):
@@ -48,7 +48,7 @@ Unlike class variables, instance variables are defined within methods.
 
 Unlike class attributes, instance attributes are not shared by objects. Every object has its own copy of the instance attribute (In case of class attributes all object refer to single copy).
 
-````
+````python
 class Person:
     country = "Bangladesh"
     def __init__(self,name,age):
@@ -70,7 +70,7 @@ Characteristic of an object.
 
 Attributes are the variables that belong to a class (can be of any data type)
 
-````
+````python
 class Person:
     country = "Bangladesh"
     def __init__(self,name,age):
@@ -90,7 +90,7 @@ Method is a special kind of function that is defined inside the class
 
 Methods are functions defined inside the body of a class. They are used to define the behaviors of an object.
 
-````
+````python
 class Person:
     def __init__(self,name,age):
         self.name = name
@@ -139,7 +139,7 @@ It provides the re-usability of the code.
  The word polymorphism means having many forms. In programming, polymorphism means same function name (but different signatures) being uses for different types.
 
 
-````
+````python
 # A simple Python function to demonstrate 
 # Polymorphism 
 
